@@ -30,7 +30,7 @@ const navItems = [
 export default function FloatingNav() {
   return (
     
-    <nav className="fixed bottom-8 left-[calc(50%+160px)] flex -translate-x-1/2 items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/80 p-2 backdrop-blur-md">
+    <nav className="fixed bottom-8 left-[calc(50%+160px)] flex -translate-x-1/2 items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/80 p-2 backdrop-blur-md max-md:left-1/2">
       {navItems.map((item) => {
   const Icon = item.icon;
 

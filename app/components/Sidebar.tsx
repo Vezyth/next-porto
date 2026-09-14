@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Sidebar() {
   return (
-    <aside className="sticky top-0 flex h-screen w-96 flex-col justify-between border-r border-zinc-800 bg-zinc-950 p-10">
+    <aside className="flex h-full w-96 shrink-0 flex-col overflow-y-auto border-r border-zinc-800 bg-zinc-950 p-10 max-md:h-auto max-md:w-full max-md:border-b max-md:border-r-0">
       {/* Top */}
       <div className="space-y-6">
         {/* Profile */}
