@@ -9,14 +9,7 @@ export default function Sidebar() {
         {/* Profile */}
         <div className="space-y-5">
           
-          <Image
-            src="/profile.png"
-            alt="Julius Kevin Raharjo"
-            width={110}
-            height={110}
-            className="rounded-2xl object-cover"
-          />
-
+          
           <div>
             <h1 className="text-3xl font-bold tracking-tight">
               Julius Kevin Raharjo
