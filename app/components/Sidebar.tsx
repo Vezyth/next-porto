@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ExternalLink } from "lucide-react";
 
 export default function Sidebar() {
   return (
@@ -52,16 +53,22 @@ export default function Sidebar() {
 
             <a
               href="https://github.com/Vezyth"
-              className="block transition hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex w-fit items-center gap-1.5 transition hover:text-white"
             >
               GitHub
+              <ExternalLink size={14} className="text-zinc-500 transition-colors group-hover:text-white" />
             </a>
 
             <a
               href="https://linkedin.com/in/..."
-              className="block transition hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex w-fit items-center gap-1.5 transition hover:text-white"
             >
               LinkedIn
+              <ExternalLink size={14} className="text-zinc-500 transition-colors group-hover:text-white" />
             </a>
           </div>
         </section>
