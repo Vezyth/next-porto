@@ -1,17 +1,19 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { ArrowLeft, GitBranch, ExternalLink } from 'lucide-react';
-import { projects } from '@/app/data/projects';
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowLeft, GitBranch, ExternalLink } from "lucide-react";
+import { projects } from "@/app/data/projects";
 
-interface ProjectDetailProps {
-  params: Promise<{
-    slug: string;
-  }>;
+export function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
 }
 
 export default async function ProjectDetail({
   params,
-}: ProjectDetailProps) {
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
 
   const project = projects.find((p) => p.slug === slug);
