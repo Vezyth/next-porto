@@ -19,8 +19,8 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "Alarm Tanggal Merah",
-    slug: "holiday-aware-alarm-app",
-    title: "Holiday-Aware Alarm App",
+    slug: "alarm-tanggal-merah",
+    title: "Alarm Tanggal Merah",
     image: "/projects/alarm-tanggal-merah.png", 
     year: "2026",
     role: "Mobile Developer",
