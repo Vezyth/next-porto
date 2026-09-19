@@ -18,6 +18,28 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "Alarm Tanggal Merah",
+    slug: "holiday-aware-alarm-app",
+    title: "Holiday-Aware Alarm App",
+    image: "/projects/alarm-tanggal-merah.png", 
+    year: "2026",
+    role: "Mobile Developer",
+    description:
+      "A smart Flutter alarm application that integrates with Google Calendar to automatically skip waking you up on Indonesian national holidays and mass leave days.",
+    technologies: ["Flutter", "Dart", "Google Calendar API"],
+    github: "https://github.com/Vezyth/alarm_app",
+    liveDemo: "",
+    problem:
+      "Standard mobile alarms follow rigid weekly schedules and do not account for public holidays. This meant my work alarm would constantly wake me up on 'Libur Nasional' (National Holidays) or 'Cuti Bersama' (Mass Leave), ruining my chance to sleep in on a well-deserved day off unless I remembered to manually turn it off the night before.",
+    solution: [
+      "Developed a custom alarm application using Flutter that automatically checks the current date against the Indonesian public holiday calendar.",
+      "Integrated the Google Calendar API to dynamically fetch and verify holiday data before allowing the alarm to trigger.",
+      "Built a granular toggle system for 'Cuti Bersama', allowing users whose companies do not observe mass leave to skip alarms exclusively on official national holidays."
+    ],
+    impact:
+      "Completely eliminated the frustration of accidental holiday wake-ups, automating my sleep schedule so I can seamlessly rest on days off without constantly toggling alarms."
+  },
+  {
     id: "rbac",
     slug: "dynamic-role-based-access-control",
     title: "Dynamic Role-Based Access Control",
